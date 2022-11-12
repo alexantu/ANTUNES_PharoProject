@@ -30,9 +30,6 @@ bindings := Dictionary new
 
 { #category : #visiting }
 EEvaluatorVisitor >> visitAddition: anEAddition [
-"""|visitor1 visitor2|
-visitor1:=EEvaluatorVisitor new.
-visitor2:=EEvaluatorVisitor new."""
 ^(anEAddition left accept:self) + (anEAddition right accept:self)
 ]
 
